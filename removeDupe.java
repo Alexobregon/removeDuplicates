@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     public int removeDuplicates(int[] nums){
         Arrays.sort(nums);
@@ -10,5 +12,6 @@ class Solution {
                     nums[ui] = nums[i];
                 }
             }
+            return ui +1;
     }
-}
+    }
